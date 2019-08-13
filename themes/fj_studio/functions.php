@@ -68,6 +68,9 @@ if ( ! function_exists( 'fj_studio_setup' ) ) :
 		// Add theme support for selective refresh for widgets.
 		add_theme_support( 'customize-selective-refresh-widgets' );
 
+		add_theme_support( 'automatic-feed-links' );
+		add_theme_support( 'title-tag' );
+
 		/**
 		 * Add support for core custom logo.
 		 *
@@ -158,4 +161,3 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
-
