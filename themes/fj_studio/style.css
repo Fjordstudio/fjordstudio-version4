@@ -59,34 +59,16 @@ html {
 	-webkit-text-size-adjust: 100%; /* 2 */
 }
 
-/* Sections
-	 ========================================================================== */
-
-/**
- * Remove the margin in all browsers.
- */
-
 body {
 	margin: 0;
 }
 
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
+* {box-sizing:border-box;}
 
 h1 {
 	font-size: 2em;
 	margin: 0.67em 0;
 }
-
-/* Grouping content
-	 ========================================================================== */
-
-/**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
- */
 
 hr {
 	box-sizing: content-box; /* 1 */
@@ -94,31 +76,14 @@ hr {
 	overflow: visible; /* 2 */
 }
 
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-
 pre {
 	font-family: monospace, monospace; /* 1 */
 	font-size: 1em; /* 2 */
 }
 
-/* Text-level semantics
-	 ========================================================================== */
-
-/**
- * Remove the gray background on active links in IE 10.
- */
-
 a {
 	background-color: transparent;
 }
-
-/**
- * 1. Remove the bottom border in Chrome 57-
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
- */
 
 abbr[title] {
 	border-bottom: none; /* 1 */
@@ -126,19 +91,10 @@ abbr[title] {
 	text-decoration: underline dotted; /* 2 */
 }
 
-/**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
-
 b,
 strong {
 	font-weight: bolder;
 }
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
 
 code,
 kbd,
@@ -147,18 +103,9 @@ samp {
 	font-size: 1em; /* 2 */
 }
 
-/**
- * Add the correct font size in all browsers.
- */
-
 small {
 	font-size: 80%;
 }
-
-/**
- * Prevent `sub` and `sup` elements from affecting the line height in
- * all browsers.
- */
 
 sub,
 sup {
@@ -176,15 +123,9 @@ sup {
 	top: -0.5em;
 }
 
-/* Embedded content
-	 ========================================================================== */
-
-/**
- * Remove the border on images inside links in IE 10.
- */
-
 img {
 	border-style: none;
+	max-width:100%;
 }
 
 /* Forms
