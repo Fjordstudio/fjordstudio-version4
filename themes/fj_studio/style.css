@@ -983,3 +983,14 @@ object {
 .gallery-caption {
 	display: block;
 }
+
+
+/* CUSTOM */
+
+.site-header .custom-logo-link {
+	max-width:50px;
+}
+
+.custom-logo-link img {
+	border-radius:50%;
+}
