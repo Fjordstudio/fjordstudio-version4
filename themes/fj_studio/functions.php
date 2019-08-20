@@ -47,6 +47,10 @@ if ( ! function_exists( 'fj_studio_setup' ) ) :
 			'menu-1' => esc_html__( 'Primary', 'fj_studio' ),
 		) );
 
+		register_nav_menus( array(
+			'menu-0' => esc_html__( 'Topmenu-1', 'fj_studio' ),
+		) );
+
 		/*
 		 * Switch default core markup for search form, comment form, and comments
 		 * to output valid HTML5.
