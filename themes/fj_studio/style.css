@@ -957,3 +957,10 @@ object {
 .home .entry-content {
 	font-size:20px;
 }
+
+.page .entry-title {
+	font-size:46px;
+}
+p + h2, p + h3 {
+	margin-top:40px;
+}
