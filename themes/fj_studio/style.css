@@ -872,3 +872,74 @@ object {
 
 
 /* CUSTOM */
+.site-content {
+	padding-top:140px;
+}
+.site-content, .site-footer {
+	max-width:1080px;
+	margin:0 auto;
+}
+.site-footer {
+	color:#8a8a8a;
+}
+.site-footer a {
+	color:#fff;
+}
+
+.site-header .custom-logo-link {
+	max-width:50px;
+	margin-right:10px;
+}
+
+.custom-logo-link img {
+	border-radius:50%;
+}
+
+.site-header .site-title, .site-header .site-title a {
+	margin:0;
+	font-size:32px;
+}
+.site-description {
+	color:#fff;
+	margin-left:10px;
+}
+
+.site-branding {
+	display:flex;
+	align-items:center;
+	max-width:1080px;
+	margin:0 auto;
+	padding:20px 0;
+}
+
+.site-header {
+	background:#C5CFD5 linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.2), transparent);
+}
+
+.site-header a, .main-navigation a {
+	font-size:20px;
+	color:#fff;
+	text-decoration:none;
+}
+
+.site-header {
+	position:fixed;
+	width:100%;
+}
+.main-navigation {
+	position:absolute;
+	background:#3C4246;
+}
+
+.menu-open-button, .menu-close-button {
+	margin:0;
+	margin-left:auto;
+	cursor:pointer;
+	color:#fff;
+	font-size:32px;
+}
+.menu-close-button {
+	text-align:center;
+	margin-left:20px;
+	margin-bottom:20px;
+}
