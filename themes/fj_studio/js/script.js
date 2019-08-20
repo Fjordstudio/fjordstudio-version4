@@ -1,3 +1,4 @@
 
-//Test if file has loaded
-console.log('script loaded');
+jQuery('.menu-open-button, .menu-close-button').on('click tap', function(){
+  jQuery('.main-navigation').toggleClass('expanded');
+});
