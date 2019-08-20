@@ -42,6 +42,10 @@
 				?>
 				<p class="site-description"><?php echo $fj_studio_description; /* WPCS: xss ok. */ ?></p>
 			<?php endif; ?>
+
+			<p class="menu-open-button">
+				<i class="fas fa-bars"></i>
+			</p>
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
