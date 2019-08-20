@@ -45,13 +45,26 @@
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'fj_studio' ); ?></button>
-			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-			) );
-			?>
+			<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php //esc_html_e( 'Primary Menu', 'fj_studio' ); ?></button> -->
+			<div class="menu-wrapper">
+				<p class="menu-close-button">
+					<i class="fas fa-times"></i>
+				</p>
+
+				<?php
+				wp_nav_menu( array(
+					'theme_location' => 'menu-0',
+					'menu_id'        => 'topmenu-1',
+				) );
+				?>
+				<?php
+				wp_nav_menu( array(
+					'theme_location' => 'menu-1',
+					'menu_id'        => 'primary-menu',
+				) );
+				?>
+
+			</div>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
