@@ -943,3 +943,17 @@ object {
 	margin-left:20px;
 	margin-bottom:20px;
 }
+
+.entry-content p {
+	max-width:800px;
+	margin: 0 auto 10px auto;
+}
+.entry-title {
+	font-family:'Lexend Deca', 'Montserrat', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+.home.page .entry-title {
+	font-size:60px;
+}
+.home .entry-content {
+	font-size:20px;
+}
