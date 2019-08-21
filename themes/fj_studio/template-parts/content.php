@@ -9,6 +9,11 @@
 
 ?>
 
+<?php
+	$terms = wp_get_post_terms( get_the_ID(), 'importance' );
+?>
+
+<div class="<?php echo 'priority-'.$terms[0]->slug; ?>">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php
@@ -57,3 +62,4 @@
 		<?php fj_studio_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
+</div>
