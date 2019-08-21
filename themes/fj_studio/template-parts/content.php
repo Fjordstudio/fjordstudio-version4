@@ -11,9 +11,15 @@
 
 <?php
 	$terms = wp_get_post_terms( get_the_ID(), 'importance' );
+
+	if($terms[0]->slug){
+		$term_slug = $terms[0]->slug;
+	}else {
+		$term_slug = 'medium';
+	}
 ?>
 
-<div class="<?php echo 'priority-'.$terms[0]->slug; ?>">
+<div class="<?php echo 'priority-'.$term_slug; ?>">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php
