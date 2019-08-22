@@ -12,6 +12,12 @@
 <?php
 	$terms = wp_get_post_terms( get_the_ID(), 'importance' );
 
+	/* echo '<pre>';
+	var_dump($terms);
+	echo '</pre>';
+
+	echo $terms[0]->slug; */
+
 	if($terms[0]->slug){
 		$term_slug = $terms[0]->slug;
 	}else {
@@ -19,7 +25,7 @@
 	}
 ?>
 
-<div class="<?php echo 'priority-'.$term_slug; ?>">
+<div class="<?php echo 'priority priority-'.$term_slug; ?>">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php
@@ -44,7 +50,20 @@
 
 	<div class="entry-content">
 		<?php
+/*
 		the_content( sprintf(
+			wp_kses(
+				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'fj_studio' ),
+				array(
+					'span' => array(
+						'class' => array(),
+					),
+				)
+			),
+			get_the_title()
+		) );
+		*/
+		the_excerpt( sprintf(
 			wp_kses(
 				/* translators: %s: Name of current post. Only visible to screen readers */
 				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'fj_studio' ),
@@ -61,6 +80,7 @@
 			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'fj_studio' ),
 			'after'  => '</div>',
 		) );
+
 		?>
 	</div><!-- .entry-content -->
 
