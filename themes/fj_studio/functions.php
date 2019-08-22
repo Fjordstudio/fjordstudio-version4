@@ -129,6 +129,8 @@ add_action( 'widgets_init', 'fj_studio_widgets_init' );
 function fj_studio_scripts() {
 	wp_enqueue_style( 'fj_studio-style', get_stylesheet_uri() );
 
+	//wp_enqueue_script( 'fj_studio-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+
 	wp_enqueue_script( 'fj_studio-custom-script', get_template_directory_uri() . '/js/script.js', array('jquery'), '20151215', true );
 
 	wp_enqueue_script( 'fj_studio-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(''), '20151215', true );
