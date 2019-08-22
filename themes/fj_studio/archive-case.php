@@ -26,6 +26,7 @@ get_header();
 				?>
 			</header><!-- .page-header -->
 
+			<div class="flex-content">
 			<?php
 			/* Start the Loop */
 			while ( have_posts() ) :
@@ -48,6 +49,8 @@ get_header();
 
 		endif;
 		?>
+
+		</div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
