@@ -18,15 +18,21 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
-		<?php
-		if ( have_posts() ) :
+		<?php if ( have_posts() ) : ?>
 
-			if ( is_home() && ! is_front_page() ) :
-				?>
+		<header class="page-header">
+			<h1>Blog</h1>
+			<?php
+			//the_archive_title( '<h1 class="page-title">', '</h1>' );
+			the_archive_description( '<div class="archive-description">', '</div>' );
+			?>
+		</header><!-- .page-header -->
+
+		<?php if ( is_home() && ! is_front_page() ) : ?>
 				<header>
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 				</header>
-				<?php
+		<?php
 			endif;
 
 			/* Start the Loop */
