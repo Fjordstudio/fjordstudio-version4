@@ -26,7 +26,7 @@ if ( ! function_exists( 'fj_studio_posted_on' ) ) :
 
 		$posted_on = sprintf(
 			/* translators: %s: post date. */
-			esc_html_x( 'Posted on %s', 'post date', 'fj_studio' ),
+			esc_html_x( 'Udgivet d. %s', 'post date', 'fj_studio' ),
 			'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 		);
 
@@ -42,7 +42,7 @@ if ( ! function_exists( 'fj_studio_posted_by' ) ) :
 	function fj_studio_posted_by() {
 		$byline = sprintf(
 			/* translators: %s: post author. */
-			esc_html_x( 'by %s', 'post author', 'fj_studio' ),
+			esc_html_x( 'af %s', 'post author', 'fj_studio' ),
 			'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 		);
 
@@ -62,7 +62,7 @@ if ( ! function_exists( 'fj_studio_entry_footer' ) ) :
 			$categories_list = get_the_category_list( esc_html__( ', ', 'fj_studio' ) );
 			if ( $categories_list ) {
 				/* translators: 1: list of categories. */
-				printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'fj_studio' ) . '</span>', $categories_list ); // WPCS: XSS OK.
+				printf( '<span class="cat-links">' . esc_html__( 'Udgivet i: %1$s', 'fj_studio' ) . '</span>', $categories_list ); // WPCS: XSS OK.
 			}
 
 			/* translators: used between list items, there is a space after the comma */
