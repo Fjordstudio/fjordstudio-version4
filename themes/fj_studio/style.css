@@ -946,8 +946,10 @@ object {
 
 .entry-content p {
 	max-width:800px;
-	margin: 0 auto 10px auto;
+	margin-left:20px;
+	text-indent:10px;
 }
+
 .entry-title {
 	font-family:'Lexend Deca', 'Montserrat', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 }
