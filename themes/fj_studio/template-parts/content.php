@@ -27,6 +27,7 @@
 
 <div class="<?php echo 'priority priority-'.$term_slug; ?>">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<div class="overlay">
 	<header class="entry-header">
 		<?php
 		if ( is_singular() ) :
@@ -45,8 +46,6 @@
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
-
-	<?php fj_studio_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php
@@ -88,5 +87,9 @@
 	<footer class="entry-footer">
 		<?php fj_studio_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
+
+	</div>
+	<?php fj_studio_post_thumbnail(); ?>
+
 </article><!-- #post-<?php the_ID(); ?> -->
 </div>
