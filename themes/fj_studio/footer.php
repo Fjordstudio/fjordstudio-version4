@@ -13,6 +13,12 @@
 
 	</div><!-- #content -->
 
+	<?php if ( is_active_sidebar( 'footer_widget_1' ) ) : ?>
+		<div id="footer-widgets" class="widget-area" role="complementary">
+			<?php dynamic_sidebar( 'footer_widget_1' ); ?>
+		</div><!-- #primary-sidebar -->
+	<?php endif; ?>
+
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
 			<span>
