@@ -52,7 +52,7 @@
 		if(is_single()){
 		the_content( sprintf(
 			wp_kses(
-				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'fj_studio' ),
+				__( 'Læs videre<span class="screen-reader-text"> "%s"</span>', 'fj_studio' ),
 				array(
 					'span' => array(
 						'class' => array(),
