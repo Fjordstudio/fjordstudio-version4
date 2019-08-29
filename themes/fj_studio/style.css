@@ -1034,3 +1034,94 @@ p + h2, p + h3 {
 	object-fit:cover;
 	object-position:0 0;
 }
+
+.home .frontpage-posts .entry-title {
+	font-size:1.5em;
+}
+.home .frontpage-posts .entry-title a {
+	text-decoration:none;
+}
+.home .frontpage-posts {margin-top:100px;}
+
+.blog .site-content {
+	max-width:100%;
+}
+
+.blog .page-header {
+	max-width:1080px;
+	margin:0 auto;
+}
+
+.blog .flex-content .priority:nth-of-type(even){
+	background:#919191;
+}
+.blog .flex-content .priority:nth-of-type(odd){
+	background:#3C4246;
+}
+.blog .flex-content .priority:nth-of-type(odd) .entry-content {
+	color: #fff;
+}
+.blog .flex-content .priority:nth-of-type(odd) .entry-footer {
+	color:#aaa;
+}
+.blog .flex-content .priority:nth-of-type(even) .entry-content {
+	color: #000;
+}
+.blog .flex-content .priority:nth-of-type(even) .entry-meta {
+	color: #3C4246;
+}
+.blog .post {
+	margin-bottom:0;
+}
+.blog .entry-title {
+	margin:0;
+	padding:10px 0;
+}
+
+.blog .priority .post {
+	max-width:1080px;
+	margin:0 auto;
+	height:500px;
+	overflow:hidden;
+	position:relative;
+}
+
+.blog .priority .post-thumbnail {
+	position:absolute;
+	top:0;
+	width:100%;
+}
+.blog .priority .overlay {
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+
+	height:500px;
+	position:relative;
+	z-index:2;
+}
+
+.blog .flex-content .priority:nth-of-type(odd) .overlay {
+	background:rgba(60,66,70,.8);
+	width:50%;
+}
+.blog .flex-content .priority:nth-of-type(odd) .entry-title, .blog .flex-content .priority:nth-of-type(odd) .entry-meta, .blog .flex-content .priority:nth-of-type(odd) .entry-content, .blog .flex-content .priority:nth-of-type(odd) .entry-footer {
+	padding:20px;
+}
+
+.blog .flex-content .priority:nth-of-type(even) .overlay {
+	background:rgba(145,145,145,.8);
+	width:50%;
+}
+.blog .flex-content .priority:nth-of-type(even) .entry-title, .blog .flex-content .priority:nth-of-type(even) .entry-meta, .blog .flex-content .priority:nth-of-type(even) .entry-content, .blog .flex-content .priority:nth-of-type(even) .entry-footer {
+	padding:20px;
+}
+
+.blog .flex-content .priority:nth-of-type(odd) .entry-meta, .blog .flex-content .priority:nth-of-type(even) .entry-meta {
+	padding-top:0;
+}
+
+.blog .priority:nth-of-type(even) .overlay {
+	text-align:right;
+	margin-left:50%;
+}
