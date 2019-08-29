@@ -19,11 +19,12 @@ get_header();
 				<h1 class="page-title">
 					<?php
 					/* translators: %s: search query. */
-					printf( esc_html__( 'Search Results for: %s', 'fj_studio' ), '<span>' . get_search_query() . '</span>' );
+					printf( esc_html__( 'Søgeresultater for: %s', 'fj_studio' ), '<span>' . get_search_query() . '</span>' );
 					?>
 				</h1>
 			</header><!-- .page-header -->
 
+			<div class="flex-content">
 			<?php
 			/* Start the Loop */
 			while ( have_posts() ) :
@@ -46,6 +47,7 @@ get_header();
 
 		endif;
 		?>
+	</div>
 
 		</main><!-- #main -->
 	</section><!-- #primary -->
