@@ -60,7 +60,7 @@
                 echo '<p><b>Stack: </b>' . get_field('stack') . '</p>';
               }
               if(get_field('link')){
-                echo '<p><a target="_blank" href="' . get_field('link') . '">Besøg websted</a></p>';
+                echo '<p><a target="_blank" href="' . get_field('link') . '"><i class="fas fa-link"></i> Besøg websted</a></p>';
               }
 
             }
@@ -109,6 +109,10 @@
 			get_the_title()
 		) );
 	}
+
+  if(!is_single()){
+    echo '<a class="overlayLink" href="' . get_the_permalink() . '"><i class="fas fa-link"></i> Læs mere</a>';
+  }
 
 		wp_link_pages( array(
 			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'fj_studio' ),
