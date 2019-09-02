@@ -11,6 +11,10 @@
 
 ?>
 
+<h2 class="frontpage-cta">
+	Er du interesseret i et samarbejde?
+</h2>
+
 	</div><!-- #content -->
 
 	<?php if ( is_active_sidebar( 'footer_widget_1' ) ) : ?>
