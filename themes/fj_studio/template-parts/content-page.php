@@ -14,7 +14,11 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
-	<?php fj_studio_post_thumbnail(); ?>
+	<?php
+		if(!is_front_page()){
+			fj_studio_post_thumbnail();
+	 	}
+	 ?>
 
 	<div class="entry-content">
 		<?php
