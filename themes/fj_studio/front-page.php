@@ -14,6 +14,12 @@
 		endwhile; // End of the loop.
 		?>
 
+    <ul class="frontpage-menu">
+      <li><a href="/jeg-arbejder-med-design-og-kode/"><i class="fas fa-link"></i> Om mig</a></li>
+      <li><a href="/laes-min-blog/"><i class="fas fa-link"></i> Læs min blog</a></li>
+      <li><a href="/case/"><i class="fas fa-link"></i> Se mine cases</a></li>
+    </ul>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
