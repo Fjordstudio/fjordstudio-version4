@@ -71,8 +71,6 @@
         if(get_field('stack')){
           echo '<p style="color:#aaa;"><b>Stack: </b>' . get_field('stack') . '</p>';
         }
-        /* echo '<p><a style="color:orchid;" href="' . get_the_permalink() . '"><i class="fas fa-link"></i> Se case her</a></p>';
-        echo '</a>'; */
         echo '</div>';
       echo '</a></li>';
 
