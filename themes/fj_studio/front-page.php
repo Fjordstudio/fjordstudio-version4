@@ -20,6 +20,29 @@
       <li><a href="/case/"><i class="fas fa-link"></i> Se mine cases</a></li>
     </ul>
 
+    <?php
+
+      $args = array(
+        'post_type' => 'case',
+        'post_status' => 'publish',
+        'tax_query' => array(
+          array(
+            'taxonomy' => 'importance',
+            'terms' => 'fremhaevet',
+            'field' => 'slug'
+          )
+        ),
+        'posts_per_page' => 8,
+          ‘orderby’ => ‘published’,
+          ‘order’ => ‘ASC’,
+        );
+
+        $loop = new WP_Query( $args );
+
+        
+
+     ?>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
