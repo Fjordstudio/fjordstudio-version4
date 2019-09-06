@@ -26,4 +26,7 @@ jQuery(document).ready(function(){
     pagerClass: 'news-pager',
     transition:'horizontal'
   })
+
+  jQuery('.slideOverlay').css('display','block');
+
 });
