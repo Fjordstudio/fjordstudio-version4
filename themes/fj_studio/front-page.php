@@ -21,25 +21,24 @@
     </ul>
 
     <?php
-
       $args = array(
-        'post_type' => 'case',
-        'post_status' => 'publish',
-        'tax_query' => array(
+       'post_type' => 'case',
+       'post_status' => 'publish',
+       'tax_query' => array(
           array(
-            'taxonomy' => 'importance',
-            'terms' => 'fremhaevet',
-            'field' => 'slug'
+              'taxonomy' => 'importance',
+              'terms' => 'fremhaevet',
+              'field' => 'slug'
           )
-        ),
-        'posts_per_page' => 8,
-          ‘orderby’ => ‘published’,
-          ‘order’ => ‘ASC’,
-        );
+      ),
+       'posts_per_page' => 8,
+       ‘orderby’ => ‘published’,
+       ‘order’ => ‘ASC’,
+      );
 
-        $loop = new WP_Query( $args );
+      $loop = new WP_Query( $args );
 
-        $slideNo = 1;
+      $slideNo = 1;
       echo '<ul id="frontpage-slider">';
       while ( $loop->have_posts() ) : $loop->the_post();
 
@@ -47,7 +46,7 @@
         echo '<a href="#slide' . $slideNo . '">';
         echo '<a href="' . get_the_permalink() . '">';
         echo '<img src="' . the_post_thumbnail() . '" alt="">';
-        echo '<div class="slideOverlay">';
+        echo '<div class="slideOverlay" style="display:none;">';
 
         // echo '<pre style="color:#000;">';
         // var_dump(get_the_category(get_the_ID()));
@@ -71,6 +70,8 @@
         if(get_field('stack')){
           echo '<p style="color:#aaa;"><b>Stack: </b>' . get_field('stack') . '</p>';
         }
+        /* echo '<p><a style="color:orchid;" href="' . get_the_permalink() . '"><i class="fas fa-link"></i> Se case her</a></p>';
+        echo '</a>'; */
         echo '</div>';
       echo '</a></li>';
 
@@ -80,6 +81,73 @@
 
       wp_reset_postdata();
      ?>
+
+     <div class="frontpage-posts">
+     <?php
+/**
+* Setup query to show the ‘services’ post type with ‘8’ posts.
+* Output is title with excerpt.
+*/
+   $args = array(
+       'post_type' => 'post',
+       'post_status' => 'publish',
+       'posts_per_page' => 2,
+       ‘orderby’ => ‘title’,
+       ‘order’ => ‘ASC’,
+   );
+
+   $loop = new WP_Query( $args );
+
+   while ( $loop->have_posts() ) : $loop->the_post();
+      // print the_title();
+      // the_excerpt();
+    ?>
+      <div class="priority">
+      <article id="post-<?php get_the_ID(); ?>">
+      	<div class="overlay">
+      	<header class="entry-header">
+      		<?php
+      			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+      		?>
+          <div class="entry-meta">
+    				<?php
+    				fj_studio_posted_on();
+    				fj_studio_posted_by();
+    				?>
+    			</div><!-- .entry-meta -->
+      	</header><!-- .entry-header -->
+
+      	<div class="entry-content">
+      		<?php
+      		the_excerpt( sprintf(
+      			wp_kses(
+      				/* translators: %s: Name of current post. Only visible to screen readers */
+      				__( 'Læs videre<span class="screen-reader-text"> "%s"</span>', 'fj_studio' ),
+      				array(
+      					'span' => array(
+      						'class' => array(),
+      					),
+      				)
+      			),
+      			get_the_title()
+      		) );
+
+          echo '<a class="overlayLink" href="' . get_the_permalink() . '"><i class="fas fa-link"></i> Læs mere</a>';
+
+      		?>
+      	</div><!-- .entry-content -->
+
+      	</div>
+      	<?php fj_studio_post_thumbnail(); ?>
+
+      </article><!-- #post-<?php the_ID(); ?> -->
+      </div>
+      <?php
+       endwhile;
+
+       wp_reset_postdata();
+      ?>
+    </div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
