@@ -92,9 +92,12 @@ a {
 }
 
 abbr[title] {
-	border-bottom: none; /* 1 */
-	text-decoration: underline; /* 2 */
-	text-decoration: underline dotted; /* 2 */
+	/* border-bottom: none;
+	text-decoration: underline;
+	text-decoration: underline dotted;
+	*/
+	text-decoration:none;
+	border-bottom:1px dotted;
 }
 
 b,
@@ -278,8 +281,29 @@ dfn, cite, em, i {
 	font-style: italic;
 }
 
+/* BLOCKQUOTES */
 blockquote {
-	margin: 0 1.5em;
+	position:relative;
+	margin:20px 40px;
+	background: rgba(255,255,255,.5);
+	padding:20px 20px 20px 40px;
+}
+blockquote div {
+	font-size:24px;
+}
+blockquote div:last-of-type {
+	font-size:18px;
+	font-style:italic;
+}
+
+blockquote:before {
+	position:absolute;
+	top:16px;
+	left:-20px;
+	color:#404040;
+	font-size:40px;
+	font-family:"FontAwesome";
+	content:"\f10e";
 }
 
 address {
@@ -517,6 +541,7 @@ a:hover, a:active {
 	position:absolute;
 	width:100%;
 	top:0;
+	left:0;
 
 	transform:translateY(-100%);
 	overflow:hidden;
