@@ -15,6 +15,8 @@
 	Er du interesseret i et samarbejde?
 </h2>
 
+<!-- <a href="#top">Jump to top of page</a> -->
+
 	</div><!-- #content -->
 
 	<?php if ( is_active_sidebar( 'footer_widget_1' ) ) : ?>
