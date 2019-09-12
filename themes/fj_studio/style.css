@@ -1237,3 +1237,46 @@ p + h2, p + h3 {
 }
 
 .single-case .comments-area {display:none;}
+
+/* Page content styling */
+.coupon-card {
+	background:rgba(255,255,255,.8);
+
+	display:inline-block;
+	width:48%;
+	margin-right:1%;
+}
+.coupon-card h3 {
+	margin:0;padding:20px;
+	background:#aaa;
+	color:#fff;
+}
+.coupon-card p {padding:20px;}
+
+
+.one-third-box {
+	background:rgba(255,255,255,.8);
+
+	display:inline-block;
+	vertical-align:top;
+
+	margin-bottom:20px;
+	width:30%;
+	margin-right:1%;
+}
+.one-third-box h3, .one-third-box li {
+	padding:20px;
+}
+.one-third-box h3 {padding-bottom:0;margin-bottom:0;}
+.one-third-box ul {padding-left:0;}
+.one-third-box ul, .one-third-box li {
+	margin-left:0;
+	list-style-type:none;
+	margin-bottom:0;
+}
+.one-third-box li:last-of-type {
+	background:#aaa;
+}
+
+
+.home .priority {width:100%;}
