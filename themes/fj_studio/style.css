@@ -1017,3 +1017,50 @@ p + h2, p + h3 {
 	text-decoration:none;
 }
 .home .frontpage-posts {margin-top:100px;}
+
+/* Archive styling */
+.archive .flex-content, .search-results .flex-content, .home .frontpage-posts {
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-around;
+	align-items:center;
+}
+
+.archive .flex-content .priority, .search-results .priority, .home .frontpage-posts .priority {
+	position:relative;
+	margin-bottom:20px;
+}
+.archive .flex-content .overlay, .search-results .overlay, .home .frontpage-posts .overlay {
+	position:absolute;
+	bottom:0;
+	right:0;
+	width:50%;
+
+	padding:0 20px;
+	background:#fff;
+	background:rgba(255,255,255,.8);
+	color:#404040;
+}
+.archive .flex-content .entry-title, .search-results .entry-title, .home .frontpage-posts .entry-title {
+	margin:0;
+	padding-top:20px;
+}
+.archive .entry-title a, .search-results .entry-title a, .home .frontpage-posts a {color:#404040;}
+
+.archive .flex-content .priority, .search-results .priority {
+	width:48%;
+}
+
+.archive .flex-content .post-thumbnail img, .search-results .flex-content .post-thumbnail img, .home .frontpage-posts .post-thumbnail img {
+	display:block;
+	width:80%;
+	margin:60px auto;
+}
+
+.archive .flex-content .category-grafisk-design .post-thumbnail img, .search-results .flex-content .category-grafisk-design .post-thumbnail img, .home .frontpage-posts .post-thumbnail img {
+	width:50%;
+}
+
+.archive .flex-content .entry-footer {
+	display:none;
+}
