@@ -11,7 +11,7 @@
 
 <div class="priority">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<div class="overlay">
+	<div class="hidden overlay">
 		<header class="entry-header">
 			<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 
@@ -28,6 +28,12 @@
 		<div class="entry-summary">
 			<?php the_excerpt(); ?>
 		</div><!-- .entry-summary -->
+
+		<?php
+			if(!is_single()){
+	    	echo '<a class="overlayLink" href="' . get_the_permalink() . '"><i class="fas fa-link"></i> Læs mere</a>';
+	  	}
+		?>
 
 	</div>
 	<?php fj_studio_post_thumbnail(); ?>

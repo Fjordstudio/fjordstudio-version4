@@ -27,8 +27,8 @@
 
 <div class="<?php echo 'priority priority-'.$term_slug; ?>">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<div class="overlay">
-	<header class="entry-header">
+	<div class="hidden overlay">
+	<header class="hidden entry-header">
 		<?php
 		if ( is_singular() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
@@ -81,7 +81,7 @@
 
 	</header><!-- .entry-header -->
 
-	<div class="entry-content">
+	<div class="hidden entry-content">
 		<?php
 		if(is_single()){
 		the_content( sprintf(
