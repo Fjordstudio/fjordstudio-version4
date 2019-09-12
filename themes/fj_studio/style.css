@@ -951,3 +951,69 @@ object {
 	margin-left:20px;
 	margin-bottom:20px;
 }
+
+/* Page adjustments and typography */
+.entry-content p, .entry-content h2, .entry-content h3 {
+	max-width:800px;
+	text-indent:10px;
+}
+.page-id-220 .entry-content p {
+	text-indent:0;
+}
+
+.entry-title {
+	font-family:'Lexend Deca', 'Montserrat', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+.home.page .post-230 .entry-title {
+	font-size:60px;
+}
+.home .post-230 .entry-content {
+	font-size:20px;
+}
+
+.page .entry-title {
+	font-size:46px;
+}
+p + h2, p + h3 {
+	margin-top:40px;
+}
+
+.search-results .entry-meta a, .home .frontpage-posts .entry-meta a {color:orchid;}
+.flex-content a {
+	color:#fff;
+	text-decoration:none;
+}
+.flex-content .entry-content p {
+	margin-left:0;
+}
+.entry-content p, .entry-content li {
+	font-size:18px;
+}
+.overlay p {font-size:16px;}
+.single .overlay p {font-size:18px;}
+.entry-content h3 {
+	font-size:22px;
+}
+
+.flex-content .entry-content {margin-top:0;}
+.flex-content .entry-meta {
+	color:#aaa;
+}
+.cat-links a {
+	color:orchid;
+}
+
+.archive .post-thumbnail img, .home .frontpage-posts img {
+	width:100%;
+	max-height:400px;
+	object-fit:cover;
+	object-position:0 0;
+}
+
+.home .frontpage-posts .entry-title {
+	font-size:1.5em;
+}
+.home .frontpage-posts .entry-title a {
+	text-decoration:none;
+}
+.home .frontpage-posts {margin-top:100px;}
