@@ -1146,3 +1146,94 @@ p + h2, p + h3 {
 	text-align:right;
 	margin-left:50%;
 }
+
+
+/* Single post styling */
+.single .entry-meta, .single .entry-footer, .single .post-navigation {
+	background:rgba(0,0,0,.2);
+	color:#fff;
+	padding:20px;
+}
+.single .entry-meta a, .single .entry-footer a, .single .post-navigation a {
+	color:#404040;
+}
+.single .entry-footer {margin-top:20px;}
+
+.single .nav-links .nav-previous a, .single .nav-links .nav-next a {
+	text-decoration:none;
+}
+.single .nav-links .nav-previous a:hover, .single .nav-links .nav-next a:hover {
+	text-decoration:underline;
+}
+.single .nav-links .nav-previous a:before, .single .nav-links .nav-next a:after {
+	font-family:"FontAwesome";
+	content:"";
+}
+.single .nav-links .nav-previous a:before {
+	content:"\f053";
+	padding-right:4px;
+}
+.single .nav-links .nav-next a:after {
+	content:"\f054";
+	padding-left:4px;
+}
+
+.single .post-thumbnail {
+	margin:40px 0;
+}
+
+.wp-block-image, .wp-block-image + * {
+	margin-top:40px;
+}
+
+.wp-block-image.floating-image + * {
+	margin-top:0;
+}
+
+.single .wp-block-image, .page .wp-block-image {
+	position:relative;
+	margin-bottom:0;
+}
+.single .wp-block-image img, .page .wp-block-image img {width:100%;max-width:100%;}
+.single .wp-block-image:before, .single .wp-block-image:after,
+.page .wp-block-image:before, .page .wp-block-image:after {
+	content:"";
+	position:absolute;
+	width:3000px;
+	top:0;
+	bottom:0;
+	right:100%;
+	background:rgba(0,0,0,.2);
+}
+.single .wp-block-image:after,
+.page .wp-block-image:after {
+	left:100%;
+}
+
+.single .wp-block-image figcaption,
+.page .wp-block-image figcaption {
+	margin-top: -8px;
+	margin-bottom:0;
+	padding: 10px;
+	background: rgba(0,0,0,.2);
+}
+.single .wp-block-image img,
+.page .wp-block-image img {
+	margin-bottom:-7px;
+}
+.single .wp-block-image img + figcaption,
+.page .wp-block-image img + figcaption {
+	margin-top:0;
+}
+
+.wp-block-image.floating-image {
+	float:right;
+	max-width:400px;
+	min-width:100px;
+	margin:0 0 20px 20px;
+}
+.wp-block-image.floating-image:before, .wp-block-image.floating-image:after {
+	display:none;
+}
+
+.single-case .comments-area {display:none;}
