@@ -104,7 +104,7 @@
     ?>
       <div class="priority">
       <article id="post-<?php get_the_ID(); ?>">
-      	<div class="overlay">
+      	<div class="hidden overlay">
       	<header class="entry-header">
       		<?php
       			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
