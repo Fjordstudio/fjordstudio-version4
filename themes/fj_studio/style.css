@@ -1065,7 +1065,6 @@ p + h2, p + h3 {
 	display:none;
 }
 
-
 /* Blog page special styling */
 .blog .site-content {
 	max-width:100%;
@@ -1146,7 +1145,6 @@ p + h2, p + h3 {
 	text-align:right;
 	margin-left:50%;
 }
-
 
 /* Single post styling */
 .single .entry-meta, .single .entry-footer, .single .post-navigation {
