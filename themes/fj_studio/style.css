@@ -1278,3 +1278,46 @@ p + h2, p + h3 {
 
 
 .home .priority {width:100%;}
+
+/* Footer styling */
+#footer-widgets {
+	max-width:1080px;
+	margin:40px auto;
+}
+
+#footer-widgets > div {
+	display:inline-block;
+	vertical-align:middle;
+}
+#footer-widgets > div:first-of-type {
+	width:66%;
+}
+#footer-widgets > div:last-of-type {
+	width:33%;
+}
+
+#footer-widgets ul {
+	margin-left:0;
+	background:#3C4246;
+	padding:20px;
+}
+#footer-widgets li {
+	list-style-type:none;
+}
+#footer-widgets a {
+	display:block;
+	text-decoration:none;
+	padding:6px 0;
+	color:#fff;
+}
+#footer-widgets a:hover, #footer-widgets a:focus {
+	text-decoration:underline;
+}
+
+#footer-widgets form {
+	padding-right:20px;
+}
+
+.page-id-220 #footer-widgets, .page-id-220 .frontpage-cta {
+	display:none;
+}
