@@ -1321,3 +1321,8 @@ p + h2, p + h3 {
 .page-id-220 #footer-widgets, .page-id-220 .frontpage-cta {
 	display:none;
 }
+
+/* Plugin specific styling */
+.cp_embed_wrapper {
+	margin-top:40px;
+}
