@@ -1326,3 +1326,17 @@ p + h2, p + h3 {
 .cp_embed_wrapper {
 	margin-top:40px;
 }
+
+.acf-meta-box {display:flex;justify-content:space-between;}
+.acf-meta-box .acf-info, .acf-meta-box .acf-screenshot {
+	display:inline-block;
+	vertical-align:top;
+}
+.acf-meta-box .acf-info{
+	width:65%;
+}
+.acf-meta-box .acf-screenshot {
+	width:32%;
+	text-align:right;
+}
+.acf-meta-box .acf-screenshot img {max-height:200px;}
