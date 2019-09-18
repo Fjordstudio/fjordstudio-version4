@@ -1346,3 +1346,19 @@ p + h2, p + h3 {
 	padding: 10px 20px 20px 20px;
 }
 .final-tiles-gallery .loading-bar {display:none;}
+
+/* FRONTPAGE SLIDER */
+.sy-slides-wrap {
+	max-height:550px;
+	overflow:hidden;
+}
+.sy-slide a {color:#fff;}
+.sy-controls a {
+	color:#404040;
+}
+
+.sy-slide > a > img {
+	height:550px;
+	object-fit:cover;
+	object-position: 0 0;
+}
