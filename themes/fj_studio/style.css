@@ -1370,3 +1370,24 @@ p + h2, p + h3 {
 	background:rgba(60,66,70,.8);
 	width:50%;
 }
+
+.sy-box a {text-decoration:none;}
+.sy-box h2 {
+	font-size:48px;
+	margin:20px;
+}
+
+
+.sy-box {position:relative;}
+#frontpage-slider:before, .sy-box:before, #frontpage-slider:after, .sy-box:after {
+	content:"";
+	position:absolute;
+	width:3000px;
+	top:0;
+	bottom:44px;
+	right:100%;
+	background:#3C4246;
+}
+#frontpage-slider:after, .sy-box:after {
+	left:100%;
+}
