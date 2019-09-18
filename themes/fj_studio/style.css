@@ -1340,3 +1340,9 @@ p + h2, p + h3 {
 	text-align:right;
 }
 .acf-meta-box .acf-screenshot img {max-height:200px;}
+
+.final-tiles-gallery {
+	background: rgba(255,255,255,.5);
+	padding: 10px 20px 20px 20px;
+}
+.final-tiles-gallery .loading-bar {display:none;}
