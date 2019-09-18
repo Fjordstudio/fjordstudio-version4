@@ -1376,7 +1376,27 @@ p + h2, p + h3 {
 	font-size:48px;
 	margin:20px;
 }
-
+.sy-box .news-pager {
+  text-align: right;
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.sy-box .news-pager li {
+  display: inline-block;
+  padding: 0.6em;
+  margin: 0 0 0 1em;
+}
+.sy-box .news-pager li.sy-active a {
+  color: #31ace2;
+}
+.sy-box .news-pager li a {
+  font-weight: 500;
+  text-decoration: none;
+  display: block;
+  color: #222;
+}
 
 .sy-box {position:relative;}
 #frontpage-slider:before, .sy-box:before, #frontpage-slider:after, .sy-box:after {
