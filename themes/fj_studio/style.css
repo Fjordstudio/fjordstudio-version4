@@ -1411,3 +1411,11 @@ p + h2, p + h3 {
 #frontpage-slider:after, .sy-box:after {
 	left:100%;
 }
+
+.sliderCategories {
+	color:#31ace2;
+	margin-top:0;
+}
+.sliderCategories span + span {
+	padding-left:10px;
+}
