@@ -1419,3 +1419,59 @@ p + h2, p + h3 {
 .sliderCategories span + span {
 	padding-left:10px;
 }
+
+/* Frontpage elements */
+.frontpage-menu {
+	margin-bottom:40px;
+}
+.frontpage-menu, .frontpage-menu li {
+	padding-left:0;
+	margin-left:0;
+	list-style:none;
+	list-style-type:none;
+}
+.frontpage-menu a {
+	display:block;
+	padding:0 20px;
+	text-decoration:none;
+}
+.frontpage-menu li {
+	display:inline-block;
+}
+
+.frontpage-menu i, .single-case .entry-meta i, .archive .overlay i, .frontpage-posts a.overlayLink i, .search a.overlayLink i {
+	transition:all .2s;
+}
+.frontpage-menu a:hover i, .single-case a:hover i, .archive .overlay a.overlayLink:hover i, .frontpage-posts a.overlayLink:hover i, .search a.overlayLink:hover i {
+	transform:rotate(-90deg);
+}
+.single-case a, .archive .overlay a.overlayLink, .frontpage-posts a.overlayLink, .search a.overlayLink i {
+	text-decoration:none;
+}
+.archive .overlay a.overlayLink, .frontpage-posts a.overlayLink, .search a.overlayLink i {
+	display:block;
+	color:orchid;
+	padding-bottom:20px;
+}
+
+.search a.overlayLink {
+	display:block;
+	color:orchid;
+	padding-bottom:20px;
+}
+.search a.overlayLink i {
+	display:inline-block;
+	padding-bottom:0;
+}
+
+.frontpage-posts .entry-content {margin-top:0;}
+.frontpage-posts .entry-meta {
+	padding:10px 0;
+}
+
+.frontpage-cta {
+	margin:80px 0 40px 0;
+	text-align:center;
+	font-family:'Lexend Deca', 'Montserrat', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+	font-size:60px;
+}
