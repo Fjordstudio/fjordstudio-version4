@@ -1479,3 +1479,29 @@ p + h2, p + h3 {
 	font-family:'Lexend Deca', 'Montserrat', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 	font-size:60px;
 }
+
+
+
+
+
+/* ===== MEDIA QUERIES ===== */
+@media only screen and (max-width:1090px){
+	/* Wrapper padding etc. */
+	.site-content, #footer-widgets, .site-footer, .site-header, .menu-wrapper {
+		padding-left:20px;
+		padding-right:20px;
+	}
+
+	.wp-block-image.floating-image {
+		max-width:200px;
+	}
+
+	.home.page .post-230 .entry-title, .frontpage-cta {
+		font-size:48px;
+	}
+
+	.blog .flex-content .priority {
+		margin-left:-20px;
+		margin-right:-20px;
+	}
+}
