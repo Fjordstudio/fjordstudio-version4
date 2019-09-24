@@ -33,6 +33,9 @@
 	$catString = rtrim($catString,',');
 
 
+	if(is_singular()){
+		echo '<p class="no-animate"><a href="/case/"><i class="fa fa-chevron-left"></i> Tilbage til oversigten</a></p>';
+	}
 ?>
 
 <div data-tags="<?php echo $catString; ?>" class="<?php echo 'priority priority-'.$term_slug; ?>">
