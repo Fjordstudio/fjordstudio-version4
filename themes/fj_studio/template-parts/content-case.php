@@ -23,12 +23,21 @@
 	}else {
 		$term_slug = 'medium';
 	}
+
 ?>
 
 <div class="<?php echo 'priority priority-'.$term_slug; ?>">
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<div class="hidden overlay">
-	<header class="hidden entry-header">
+	<?php if( !is_singular() ){ ?>
+		<div class="hidden overlay">
+		<header class="hidden entry-header">
+	<?php }else { ?>
+		<div class="overlay">
+		<header class="entry-header">
+	<?php } ?>
+
+
 		<?php
 		if ( is_singular() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
@@ -81,7 +90,12 @@
 
 	</header><!-- .entry-header -->
 
-	<div class="hidden entry-content">
+	<?php if( !is_singular() ){ ?>
+		<div class="hidden entry-content">
+	<?php }else { ?>
+		<div class="entry-content">
+	<?php } ?>
+
 		<?php
 		if(is_single()){
 		the_content( sprintf(
