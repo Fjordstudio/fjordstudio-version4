@@ -26,6 +26,8 @@ get_header();
 				?>
 			</header><!-- .page-header -->
 
+			<div class="buttons"></div>
+
 			<div class="flex-content">
 			<?php
 			/* Start the Loop */
