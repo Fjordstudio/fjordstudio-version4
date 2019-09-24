@@ -24,9 +24,18 @@
 		$term_slug = 'medium';
 	}
 
+	$catArray = get_the_category();
+
+	$catString = '';
+	foreach($catArray as $category){
+  	$catString .= $category->name . ','; //category name
+	}
+	$catString = rtrim($catString,',');
+
+
 ?>
 
-<div class="<?php echo 'priority priority-'.$term_slug; ?>">
+<div data-tags="<?php echo $catString; ?>" class="<?php echo 'priority priority-'.$term_slug; ?>">
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php if( !is_singular() ){ ?>
