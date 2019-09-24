@@ -31,7 +31,7 @@ jQuery(document).ready(function(){
 
 });
 
-(function() {
+function showOnScroll() {
   var elements;
   var windowHeight;
 
@@ -57,7 +57,8 @@ jQuery(document).ready(function(){
 
   init();
   checkPosition();
-})();
+};
+showOnScroll();
 
 (function() {
 
@@ -103,6 +104,7 @@ jQuery(document).ready(function(){
 				.hide()
 				.filter(tagged[tagName])
 				.show();
+        showOnScroll();
 			}
 		}).appendTo($buttons);
 	});
