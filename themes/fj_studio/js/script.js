@@ -58,3 +58,53 @@ jQuery(document).ready(function(){
   init();
   checkPosition();
 })();
+
+(function() {
+
+	var $imgs = jQuery('.archive.post-type-archive-case .priority');
+	var $buttons = jQuery('.buttons');
+	var tagged = {};
+
+	$imgs.each(function() {
+		var img = this;
+		var tags = jQuery(this).data('tags');
+
+		if (tags) {
+			tags.split(',').forEach(function(tagName) {
+				if(tagged[tagName] == null) {
+					tagged[tagName] = [];
+				}
+				tagged[tagName].push(img);
+			});
+		}
+	});
+
+	jQuery('<button/>', {
+		text: 'Vis alle',
+		class: 'active',
+		click: function() {
+			jQuery(this)
+			.addClass('active')
+			.siblings()
+			.removeClass('active');
+			$imgs.show();
+		}
+	}).appendTo($buttons);
+
+	jQuery.each(tagged, function(tagName) {
+		jQuery('<button/>', {
+			text: tagName + ' (' + tagged[tagName].length + ')',
+			click: function() {
+				jQuery(this)
+				.addClass('active')
+				.siblings()
+				.removeClass('active');
+				$imgs
+				.hide()
+				.filter(tagged[tagName])
+				.show();
+			}
+		}).appendTo($buttons);
+	});
+
+}());
