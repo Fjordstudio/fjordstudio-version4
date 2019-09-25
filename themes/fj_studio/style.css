@@ -1523,4 +1523,8 @@ p + h2, p + h3 {
 	.sy-box:before, .sy-box:after {
 		display:none;
 	}
+
+	.buttons, .buttons button {
+		margin-bottom:20px;
+	}
 }
