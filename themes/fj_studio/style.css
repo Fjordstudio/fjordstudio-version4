@@ -1528,3 +1528,27 @@ p + h2, p + h3 {
 		margin-bottom:20px;
 	}
 }
+@media only screen and (max-width:960px){
+
+	.sy-box h2 {
+		font-size:36px;
+	}
+
+	.one-third-box {
+		width:48%;
+	}
+
+	.archive .flex-content .overlay, .search-results .overlay, .home .frontpage-posts .overlay {
+		width:70%;
+	}
+	.archive .flex-content .category-grafisk-design .post-thumbnail img, .search-results .flex-content .category-grafisk-design .post-thumbnail img, .home .frontpage-posts .post-thumbnail img {
+		width:80%;
+		margin:0 0 60px 60px;
+	}
+
+	.archive .flex-content .priority, .search-results .priority, .home .frontpage-posts .priority {
+		margin-bottom:100px;
+	}
+
+	.post-type-archive-case .buttons {margin-bottom:20px;}
+}
