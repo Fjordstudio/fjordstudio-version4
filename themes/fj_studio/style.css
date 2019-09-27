@@ -1555,7 +1555,6 @@ p + h2, p + h3 {
 
 	.post-type-archive-case .buttons {margin-bottom:20px;}
 }
-
 @media only screen and (max-width:768px){
 	.page .site-main {margin-bottom:40px;}
 	.blog .site-main {margin-bottom:60px;}
@@ -1616,5 +1615,23 @@ p + h2, p + h3 {
 	}
 
 	.single .overlay p {font-size:16px;}
+
+}
+@media only screen and (max-width:660px){
+	.one-third-box {
+		width:100%;
+		margin-right:0;
+	}
+
+	.frontpage-menu li {
+		display:block;
+	}
+
+	.sy-box h2 {
+		margin-left:0;
+		width:100vw;
+	}
+	.slideOverlay {width:70%;}
+	.slideOverlay p + p {display:none;}
 
 }
