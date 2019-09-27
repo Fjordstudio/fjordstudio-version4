@@ -1100,6 +1100,9 @@ p + h2, p + h3 {
 .blog .flex-content .priority:nth-of-type(even) .entry-meta {
 	color: #3C4246;
 }
+.blog .priority:nth-of-type(even) .cat-links a {
+	color:darkmagenta;
+}
 .blog .post {
 	margin-bottom:0;
 }
