@@ -1555,3 +1555,66 @@ p + h2, p + h3 {
 
 	.post-type-archive-case .buttons {margin-bottom:20px;}
 }
+
+@media only screen and (max-width:768px){
+	.page .site-main {margin-bottom:40px;}
+	.blog .site-main {margin-bottom:60px;}
+	.blog .priority .post, .blog .priority .overlay {
+		height:auto;
+		width:100% !important;
+	}
+	.blog .priority:nth-of-type(even) .overlay {margin-left:0;}
+	.blog .flex-content .entry-title {font-size:22px;}
+
+	.sy-slides-wrap {
+		max-height:400px;
+	}
+	.sy-box h2 {
+		font-size:22px;
+	}
+
+	.site-content {padding-top:120px;}
+
+	.home.page .post-230 .entry-title, .frontpage-cta {
+		font-size:36px;
+	}
+	.frontpage-cta {
+		margin:0 0 20px 0;
+	}
+
+	#footer-widgets > div {
+		width:100% !important;
+		display:block;
+	}
+	.menu-footer-menu-container {margin-top:40px;}
+
+	.entry-content p, .entry-content li {font-size:16px;}
+	.site-header a, .main-navigation a {font-size:16px;}
+
+	.archive .flex-content .entry-title, .search-results .entry-title, .home .frontpage-posts .entry-title,
+	.home .frontpage-posts .entry-title {
+		font-size:22px;
+	}
+
+	.archive .flex-content .priority, .search-results .priority {
+		width:100%;
+		margin-bottom:80px;
+	}
+
+	.archive .flex-content .category-grafisk-design .post-thumbnail img, .search-results .flex-content .category-grafisk-design .post-thumbnail img {
+		width:50%;
+		margin:0;
+	}
+	.archive .flex-content .post-thumbnail img, .search-results .flex-content .post-thumbnail img, .home .frontpage-posts .post-thumbnail img {
+		width:95%;
+		margin:0;
+		margin-bottom:30px;
+	}
+
+	.home .frontpage-cta {
+		margin-top:-40px;
+	}
+
+	.single .overlay p {font-size:16px;}
+
+}
