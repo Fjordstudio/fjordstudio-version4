@@ -1635,3 +1635,48 @@ p + h2, p + h3 {
 	.slideOverlay p + p {display:none;}
 
 }
+@media only screen and (max-width:580px){
+	.coupon-card {
+		width:100%;
+		margin-right:0;
+	}
+	.coupon-card + .coupon-card {margin-top:20px;}
+
+	.coupon-card h3 {
+		padding:16px 10px;
+	}
+	.coupon-card p {
+		padding:10px;
+	}
+
+	.wp-block-image.floating-image {
+		min-width:auto;
+		max-width:100%;
+		width:100%;
+	}
+
+	.archive .flex-content .overlay, .search-results .overlay, .home .frontpage-posts .overlay {
+		width:100%;
+	}
+	.archive .flex-content .post-thumbnail img, .search-results .flex-content .post-thumbnail img, .home .frontpage-posts .post-thumbnail img {
+		width:100%;
+		margin:0 auto;
+	}
+
+	.archive .flex-content .category-grafisk-design .post-thumbnail img, .search-results .flex-content .category-grafisk-design .post-thumbnail img {
+		width:70%;
+		margin:0 auto;
+	}
+
+	.archive .flex-content .overlay, .search-results .overlay, .home .frontpage-posts .overlay {
+		top:0;
+		bottom:auto;
+		min-height:100%;
+	}
+
+	.archive .flex-content .priority, .search-results .priority {
+		margin-bottom:40px;
+	}
+
+	.overlay .entry-meta {font-size:12px;}
+}
