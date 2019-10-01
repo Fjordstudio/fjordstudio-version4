@@ -1680,3 +1680,5 @@ p + h2, p + h3 {
 
 	.overlay .entry-meta {font-size:12px;}
 }
+
+html { scroll-behavior: smooth; }
