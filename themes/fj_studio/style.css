@@ -1700,3 +1700,6 @@ html { scroll-behavior: smooth; }
 .fade-in-element {
   animation: fade-in 1.4s;
 }
+.hidden {
+  opacity: 0;
+}
