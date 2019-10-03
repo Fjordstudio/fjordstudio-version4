@@ -7,4 +7,4 @@ As a bonus, I've added a blog to the site in order to express my views and exper
 
 The design is completely new and altogether different from what I previously used. It is sleek - it is more modern - makes better use of UI animation - and first and foremost, it emphasises typography in ways I used to think I didn't know how to do.
 
-![Screenshot of the new Fjordstudio website](https://github.com/Fjordstudio/fjordstudio-version4/raw/master/screenshot.png "Screenshot of Fjordstudio version 4")
+![Screenshot of the new Fjordstudio website](https://github.com/Fjordstudio/fjordstudio-version4/raw/master/themes/fj_studio/screenshot.png "Screenshot of Fjordstudio version 4")
