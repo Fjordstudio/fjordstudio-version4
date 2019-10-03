@@ -14,4 +14,5 @@ Also, the site content has been written / re-written / translated in(to) Danish,
 - Improve on the 'cases' navigation links, and perhaps adding content-related cases, as well as cases in design and development
 - Creating better and more illustrative graphics for the blog posts
 
+## Screenshot
 ![Screenshot of the new Fjordstudio website](https://github.com/Fjordstudio/fjordstudio-version4/raw/master/themes/fj_studio/screenshot.png "Screenshot of Fjordstudio version 4")
