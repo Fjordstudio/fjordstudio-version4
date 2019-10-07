@@ -1684,6 +1684,7 @@ p + h2, p + h3 {
 html { scroll-behavior: smooth; }
 
 
+/* Animations */
 .no-animate {margin-top:0;}
 .no-animate a {
 	color:#aaa !important;
