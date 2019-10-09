@@ -1,14 +1,3 @@
-<?php
-/**
- * Template part for displaying page content in page.php
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package fjordstudio
- */
-
-?>
-
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
@@ -21,6 +10,7 @@
 	 ?>
 
 	<div class="entry-content">
+    <div>
 		<?php
 		the_content();
 
@@ -29,6 +19,11 @@
 			'after'  => '</div>',
 		) );
 		?>
+    </div>
+    <div class="signature">
+      
+      <img src="https://fjordstudio.dk/resume/img/profile-pic-cropped.png" alt="Katrine-Marie Burmeister">
+    </div>
 	</div><!-- .entry-content -->
 
 	<?php if ( get_edit_post_link() ) : ?>
