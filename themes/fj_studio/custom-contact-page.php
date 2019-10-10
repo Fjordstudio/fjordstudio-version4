@@ -31,3 +31,5 @@ get_sidebar();
 get_footer();
 
 ?>
+
+<script src="https://fjordstudio.dk/assets/js/velocity/velocity.min.js"></script>
