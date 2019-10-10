@@ -33,3 +33,8 @@ get_footer();
 ?>
 
 <script src="https://fjordstudio.dk/assets/js/velocity/velocity.min.js"></script>
+<script>
+  window.addEventListener("load", function(){
+		
+  });
+</script>
