@@ -35,7 +35,8 @@ get_footer();
 <script src="https://fjordstudio.dk/assets/js/velocity/velocity.min.js"></script>
 <script>
   window.addEventListener("load", function(){
-		// SVG signature animation
+
+    // SVG signature animation
     jQuery('#signature #katrine path').velocity({
 			'stroke-dashoffset': 0
     }, {
