@@ -1739,3 +1739,7 @@ html { scroll-behavior: smooth; }
 	stroke-dashoffset:2000;
 	stroke-dasharray:2000;
 }
+
+.signature img {
+	border-radius:78% 22% 20% 80% / 62% 35% 65% 38%;
+}
