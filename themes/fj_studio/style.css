@@ -1742,4 +1742,12 @@ html { scroll-behavior: smooth; }
 
 .signature img {
 	border-radius:78% 22% 20% 80% / 62% 35% 65% 38%;
+	margin-top:-70px;
+}
+
+@media only screen and (max-width:960px){
+	.signature img {
+		display:block;
+		margin:0 auto;
+	}
 }
