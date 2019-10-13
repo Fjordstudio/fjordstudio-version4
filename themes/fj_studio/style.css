@@ -1759,6 +1759,16 @@ html { scroll-behavior: smooth; }
 }
 
 @media only screen and (max-width:960px){
+	.page-template-custom-contact-page .entry-content p {
+		width:100%;
+	}
+	.page-template-custom-contact-page .signature {
+		position:static;
+		margin:20px auto;
+		width:100%;
+		max-width:100%
+	}
+	
 	.signature img {
 		display:block;
 		margin:0 auto;
