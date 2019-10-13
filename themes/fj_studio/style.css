@@ -1745,6 +1745,19 @@ html { scroll-behavior: smooth; }
 	margin-top:-70px;
 }
 
+.page-template-custom-contact-page .entry-content p {
+	width:50%;
+}
+.page-template-custom-contact-page .entry-content .wpcf7 p {width:100%;}
+.page-template-custom-contact-page .entry-content {position:relative;}
+.page-template-custom-contact-page .signature {
+	position:absolute;
+	width:50%;
+	max-width:400px;
+	right:0;
+	top:0;
+}
+
 @media only screen and (max-width:960px){
 	.signature img {
 		display:block;
