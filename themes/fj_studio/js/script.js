@@ -19,8 +19,10 @@ jQuery(document).ready(function(){
   });
 
   jQuery('#frontpage-slider').slippry({
-    adaptiveHeight: false, // height of the sliders adapts to current
+    adaptiveHeight: true, // height of the sliders adapts to current
     captions: false,
+    speed: 1200,
+    pause:5000,
 
     // pager
     pagerClass: 'news-pager',
