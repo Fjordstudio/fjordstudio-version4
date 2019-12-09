@@ -9,6 +9,8 @@ The design is completely new and altogether different from what I previously use
 
 Also, the site content has been written / re-written / translated in(to) Danish, instead of remaining in English.
 
+NOTE: Right now a lot of the freelancer sections are disabled, since I am in a fulltime position right now.
+
 ## Future Plans
 - Making the site multilingual in at least Danish and English
 - Improve on the 'cases' navigation links, and perhaps adding content-related cases, as well as cases in design and development
