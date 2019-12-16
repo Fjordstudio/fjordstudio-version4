@@ -1875,3 +1875,22 @@ html { scroll-behavior: smooth; }
         display:none;
     }
 }
+
+.menu-item-615 {display:none;}
+@media only screen and (min-width:600px){
+	.menu-item-615 {
+		position:relative;
+		display:flex;
+		align-items:center;
+		padding-left:40px;
+		top:-70px;
+	}
+	.menu-item-615:before {
+		font-family: "FontAwesome";
+		content: "\f015";
+		position: absolute;
+		left: 0;
+		color: #fff;
+		font-size: 30px;
+	}
+}
