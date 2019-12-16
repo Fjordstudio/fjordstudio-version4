@@ -24,3 +24,21 @@
     	)
   	);
   }
+
+	add_action('init', 'create_post_type2');
+	function create_post_type2(){
+  	register_post_type('opensource', array('labels' => array(
+        'name' => __('Open Source'),
+        'singular_name' => __('Open Source Projekt'),
+        'add_new' => __('Tilføj nyt'),
+        'add_new_item' => __('Tilføj nyt projekt')
+    	),
+    	'public' => true,
+    	'has_archive' => true,
+			'show_in_nav_menus' => true,
+			'menu_icon' => 'dashicons-media-text',
+			'taxonomies' => array('category', 'post_tag'),
+      'supports' => array( 'title', 'editor', 'comments', 'excerpt', 'custom-fields', 'thumbnail' )
+    	)
+  	);
+  }
