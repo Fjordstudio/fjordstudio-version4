@@ -42,3 +42,21 @@
     	)
   	);
   }
+
+	add_action('init', 'create_post_type3');
+	function create_post_type3(){
+  	register_post_type('demo', array('labels' => array(
+        'name' => __('Demoer'),
+        'singular_name' => __('Demo'),
+        'add_new' => __('Tilføj ny'),
+        'add_new_item' => __('Tilføj ny demo')
+    	),
+    	'public' => true,
+    	'has_archive' => true,
+			'show_in_nav_menus' => true,
+			'menu_icon' => 'dashicons-media-interactive',
+			'taxonomies' => array('category', 'post_tag'),
+      'supports' => array( 'title', 'editor', 'comments', 'excerpt', 'custom-fields', 'thumbnail' )
+    	)
+  	);
+  }
