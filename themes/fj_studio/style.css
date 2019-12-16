@@ -4,7 +4,7 @@ Theme URI: http://underscores.me/
 Author: Katrine-Marie Burmeister
 Author URI: https://fjordstudio.dk
 Description: Tema til K-M Burmeister\'s personlige og freelancer website.
-Version: 1.0.0
+Version: 2.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: fj_studio
@@ -1063,12 +1063,22 @@ p + h2, p + h3 {
 
 .archive .flex-content .post-thumbnail img, .search-results .flex-content .post-thumbnail img, .home .frontpage-posts .post-thumbnail img {
 	display:block;
+	border-radius:16px;
 	width:80%;
 	margin:60px auto;
 }
 
+@media only screen and (min-width:768px){
+	.archive .flex-content .post-thumbnail img, .search-results .flex-content .post-thumbnail img, .home .frontpage-posts .post-thumbnail img {
+		height:300px;
+		object-fit:cover;
+		object-position:center;
+	}
+}
+
 .archive .flex-content .category-grafisk-design .post-thumbnail img, .search-results .flex-content .category-grafisk-design .post-thumbnail img, .home .frontpage-posts .post-thumbnail img {
-	width:50%;
+	/* width:50%; */
+	width:80%;
 }
 
 .archive .flex-content .entry-footer {
@@ -1168,6 +1178,7 @@ p + h2, p + h3 {
 	background:rgba(0,0,0,.2);
 	color:#fff;
 	padding:20px;
+	margin-top:20px;
 }
 .single .entry-meta a, .single .entry-footer a, .single .post-navigation a {
 	color:#404040;
@@ -1456,13 +1467,13 @@ p + h2, p + h3 {
 	display:inline-block;
 }
 
-.frontpage-menu i, .single-case .entry-meta i, .archive .overlay i, .frontpage-posts a.overlayLink i, .search a.overlayLink i {
+.frontpage-menu i, .single .entry-meta i, .archive .overlay i, .frontpage-posts a.overlayLink i, .search a.overlayLink i {
 	transition:all .2s;
 }
-.frontpage-menu a:hover i, .single-case a:hover i, .archive .overlay a.overlayLink:hover i, .frontpage-posts a.overlayLink:hover i, .search a.overlayLink:hover i {
+.frontpage-menu a:hover i, .single a:hover i, .archive .overlay a.overlayLink:hover i, .frontpage-posts a.overlayLink:hover i, .search a.overlayLink:hover i {
 	transform:rotate(-90deg);
 }
-.single-case a, .archive .overlay a.overlayLink, .frontpage-posts a.overlayLink, .search a.overlayLink i {
+.single a, .archive .overlay a.overlayLink, .frontpage-posts a.overlayLink, .search a.overlayLink i {
 	text-decoration:none;
 }
 .archive .overlay a.overlayLink, .frontpage-posts a.overlayLink, .search a.overlayLink i {
@@ -1687,7 +1698,8 @@ html { scroll-behavior: smooth; }
 /* Animations */
 .no-animate {margin-top:0;}
 .no-animate a {
-	color:#aaa !important;
+	color:#aaa;
+	color: rgba(0,0,0,.3);
 }
 .no-animate i {
 	transform:rotate(0deg) !important;
@@ -1768,9 +1780,98 @@ html { scroll-behavior: smooth; }
 		width:100%;
 		max-width:100%
 	}
-	
+
 	.signature img {
 		display:block;
 		margin:0 auto;
 	}
+}
+
+@media only screen and (min-width:600px){
+    .home .frontpage-posts .priority article, .archive .flex-content .priority article, .search-results .priority article {
+        background-image:none !important;
+    }
+}
+
+@media only screen and (max-width:600px){
+
+    .wp-block-image .alignright, .wp-block-image .alignleft {
+        float:none;
+        display:block;
+        margin-left:0;margin-right:0;
+    }
+    .wp-block-image .alignright img, .wp-block-image .alignleft img {
+        width:100%;
+    }
+
+    .site-description {
+        display:none;
+    }
+    .home.page .post-230 .entry-title, .page .entry-title {
+        font-size:24px;
+    }
+    .site-header .site-title, .site-header .site-title a {
+        font-size:24px;
+    }
+
+    #footer-widgets .widget-title {
+        font-size:18px;
+    }
+    .frontpage-cta {
+        font-size:24px;
+    }
+
+    form {
+        max-width:100%;
+        overflow:hidden;
+    }
+
+    .buttons {
+        display:none;
+    }
+
+    .archive .flex-content .priority, .search-results .priority, .home .frontpage-posts .priority {
+        margin-bottom:80px;
+    }
+
+    .home .frontpage-posts .priority {
+        margin-bottom:60px;
+    }
+    .home .frontpage-cta {
+        margin-top:60px;
+    }
+
+    .menu-topmenu-1-container, .menu-main-menu-container {
+        width:100%;
+    }
+
+    .menu-wrapper {
+        display:flex;
+        flex-direction:column;
+    }
+
+    .menu-topmenu-1-container {order:3;}
+
+    .wp-block-image:before, .wp-block-image:after {display:none;}
+    .wp-block-image {
+        max-width:100%;
+        overflow:hidden;
+    }
+
+    .wp-block-image, .wp-block-image + * {margin-top:20px;}
+
+    .entry-content h2 {
+        font-size:20px;
+    }
+
+    .home .frontpage-posts .priority article, .archive .flex-content .priority article, .search-results .priority article {
+        background-size:cover;
+    }
+    .home .frontpage-posts .overlay, .archive .flex-content .priority .overlay, .search-results .priority .overlay {
+        position:static;
+        min-height:150px;
+    }
+    .home .frontpage-posts .post-thumbnail img, .archive .flex-content .post-thumbnail img, .search-results .priority .post-thumbnail img {
+        display:none;
+    }
 }
