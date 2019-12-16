@@ -1894,3 +1894,12 @@ html { scroll-behavior: smooth; }
 		font-size: 30px;
 	}
 }
+
+
+.archive-open-source img, .archive-demo img {
+	border-radius:16px;
+}
+
+.single-demo .post-thumbnail, .single-opensource .post-thumbnail {
+	display:none;
+}
