@@ -10,18 +10,26 @@
 get_header();
 ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area archive-demo">
 		<main id="main" class="site-main">
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
+      <header class="page-header">
+				<h1>
+					Demoer
+				</h1>
 				<?php
-				the_archive_title( '<h1 class="page-title">', '</h1>' );
+				//the_archive_title( '<h1 class="page-title">', '</h1>' );
+				//echo '<h1>' . get_the_archive_title() . '</h1>';
 				the_archive_description( '<div class="archive-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
-
+      <p>
+        Dette er siden for mine for-sjov projekter, animations-demoer og eksperimenter. Ting, der egentlig ikke behøvede at føre til noget, men som var lærerige, sjove og lave - og i nogle tilfælde faktisk førte til et produkt, der er værd at dele.
+      </p>
+      <p>Her på siden kan I se mine personlige favoritter. For mere, se også <a href="https://codepen.io/Katrine-Marie">min CodePen profil</a>.</p>
+      <div class="flex-content">
 			<?php
 			/* Start the Loop */
 			while ( have_posts() ) :
@@ -32,10 +40,10 @@ get_header();
 				 * If you want to override this in a child theme, then include a file
 				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
 				 */
-				get_template_part( 'template-parts/content', get_post_type() );
+				get_template_part( 'template-parts/content-demo', get_post_type() );
 
 			endwhile;
-
+      ?></div><?php
 			the_posts_navigation();
 
 		else :
