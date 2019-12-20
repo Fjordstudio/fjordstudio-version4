@@ -34,13 +34,17 @@
 
 
 	if(is_singular()){
-		echo '<p class="no-animate"><a href="/case/"><i class="fa fa-chevron-left"></i> Tilbage til oversigten</a></p>';
+		echo '<p class="no-animate"><a href="/demo/"><i class="fa fa-chevron-left"></i> Tilbage til oversigten</a></p>';
 	}
 ?>
 
 <div data-tags="<?php echo $catString; ?>" class="<?php echo 'priority priority-'.$term_slug; ?>">
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<?php if( !is_singular() ){ ?>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> style="background-image:url('<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>');">
+    <?php } else { ?>
+    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+    <?php } ?>
 	<?php if( !is_singular() ){ ?>
 		<div class="hidden overlay">
 		<header class="hidden entry-header">
@@ -124,7 +128,7 @@
 	}else {
 		the_excerpt( sprintf(
 			wp_kses(
-				/* translators: %s: Name of current post. Only visible to screen readers */
+
 				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'fj_studio' ),
 				array(
 					'span' => array(
@@ -134,6 +138,7 @@
 			),
 			get_the_title()
 		) );
+		//echo '<p>' . excerpt() . '</p>';
 	}
 
   if(!is_single()){
