@@ -50,7 +50,10 @@ jQuery(document).ready(function(){
     jQuery('.search-button').toggleClass('invisible');
   });
 
-  
+  jQuery(document.body).on('click', '.header-search.shown svg', function(){
+    console.log('click');
+    jQuery('.search-form').submit();
+  });
   /*jQuery('.header-search.shown svg').live('click', function(){
     console.log('click');
     jQuery('.search-form').submit();
