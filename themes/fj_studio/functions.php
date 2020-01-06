@@ -105,6 +105,18 @@ function fj_studio_content_width() {
 }
 add_action( 'after_setup_theme', 'fj_studio_content_width', 0 );
 
+function excerpt(){
+    $excerpt = get_the_excerpt();
+    $excerpt = preg_replace(" ([.*?])",'',$excerpt);
+    $excerpt = strip_shortcodes($excerpt);
+    $excerpt = strip_tags($excerpt);
+    $excerpt = substr($excerpt, 0, 100);
+    $excerpt = substr($excerpt, 0, strripos($excerpt, " "));
+    $excerpt = trim(preg_replace( '/\s+/', ' ', $excerpt));
+    $excerpt = $excerpt.'...';
+    return $excerpt;
+}
+
 /**
  * Register widget area.
  *
@@ -145,12 +157,6 @@ function fj_studio_scripts() {
 	wp_enqueue_script( 'fj_studio-custom-script', get_template_directory_uri() . '/js/script.js', array('jquery'), '20151215', true );
 
 	// wp_enqueue_script( 'fj_studio-filter-tags', get_template_directory_uri() . '/js/filter-tags.js', array(''), '20151215', true );
-
-	wp_enqueue_script( 'fj_studio-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(''), '20151215', true );
-
-	wp_enqueue_script( 'fj_studio-fontawesome', 'https://kit.fontawesome.com/140f8650bf.js', array(), '20151215', true );
-
-	//wp_enqueue_script( 'fj_studio-slippry-js', get_template_directory_uri() . '/js/slippry/slippry.min.js', array(''), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
