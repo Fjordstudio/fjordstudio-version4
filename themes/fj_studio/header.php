@@ -43,10 +43,20 @@
 				<p class="site-description"><?php echo $fj_studio_description; /* WPCS: xss ok. */ ?></p>
 			<?php endif; ?>
 
-			<p class="menu-open-button">
-				<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			<div class="icon-nav">
+				<p class="search-button">
+					<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						 viewBox="0 0 52.966 52.966" style="enable-background:new 0 0 52.966 52.966;" xml:space="preserve">
+					<path d="M51.704,51.273L36.845,35.82c3.79-3.801,6.138-9.041,6.138-14.82c0-11.58-9.42-21-21-21s-21,9.42-21,21s9.42,21,21,21
+						c5.083,0,9.748-1.817,13.384-4.832l14.895,15.491c0.196,0.205,0.458,0.307,0.721,0.307c0.25,0,0.499-0.093,0.693-0.279
+						C52.074,52.304,52.086,51.671,51.704,51.273z M21.983,40c-10.477,0-19-8.523-19-19s8.523-19,19-19s19,8.523,19,19
+						S32.459,40,21.983,40z"/>
+					</svg>
+				</p>
+				<p class="menu-open-button">
+					<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 						 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-				  <g>
+					<g>
 						<g>
 							<path d="M501.333,96H10.667C4.779,96,0,100.779,0,106.667s4.779,10.667,10.667,10.667h490.667c5.888,0,10.667-4.779,10.667-10.667
 								S507.221,96,501.333,96z"/>
@@ -64,9 +74,10 @@
 								c5.888,0,10.667-4.779,10.667-10.667C512,399.445,507.221,394.667,501.333,394.667z"/>
 						</g>
 					</g>
-				</svg>
-				<!-- <i class="fas fa-bars"></i> -->
-			</p>
+					</svg>
+					<!-- <i class="fas fa-bars"></i> -->
+				</p>
+			</div>
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
