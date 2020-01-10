@@ -1882,17 +1882,21 @@ html { scroll-behavior: smooth; }
 		position:relative;
 		display:flex;
 		align-items:center;
-		padding-left:40px;
 		top:-70px;
 	}
-	.menu-item-615:before {
+	.menu-item-615 svg {
+		width:30px;
+		height:30px;
+		margin-right:10px;
+	}
+	/* .menu-item-615:before {
 		font-family: "FontAwesome";
 		content: "\f015";
 		position: absolute;
 		left: 0;
 		color: #fff;
 		font-size: 30px;
-	}
+	} */
 }
 
 
