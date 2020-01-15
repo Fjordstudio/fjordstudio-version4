@@ -252,6 +252,11 @@ template {
 	display: none;
 }
 
+svg * {
+	stroke:#fff;
+	fill:#fff;
+}
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -950,16 +955,77 @@ object {
 	color:#fff;
 	font-size:32px;
 }
-.menu-open-button i, .menu-close-button i {
+.menu-open-button {
+	display:flex;
+	align-items:center;
+}
+.menu-open-button svg, .search-button svg {
+	width:35px;
+	height:35px;
 	transition:all .4s;
 }
-.menu-open-button i:hover, .menu-close-button i:hover {
+.menu-close-button svg {
+	width:20px;
+	height:20px;
+	transition:all .4s;
+}
+.menu-open-button svg:hover, .menu-close-button svg:hover {
 	transform:rotate(-90deg);
 }
 .menu-close-button {
 	text-align:center;
 	margin-left:20px;
 	margin-bottom:20px;
+}
+
+.icon-nav {
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	margin-left:auto;
+}
+.search-button {
+	cursor:pointer;
+	margin-right:20px;
+}
+.search-button svg {
+	fill:#fff;
+	stroke:#fff;
+	width:30px;
+	height:30px;
+}
+.search-button.invisible {display:none;}
+
+.header-search {
+	opacity:0;
+	visibility:hidden;
+	transition:opacity .2s;
+
+	flex:1;
+	text-align:right;
+}
+.header-search.shown {
+	opacity:1;
+	visibility:visible;
+}
+
+.header-search input {
+	background:none;
+	color:#fff;
+	border-bottom:1px solid #fff;
+}
+.header-search input[type="submit"]{
+	display:none;
+}
+.header-search form > label {
+	display:flex;
+	justify-content:flex-end;
+	align-items:center;
+	padding:20px 0;
+}
+.header-search svg {
+	cursor:pointer;
+	margin-right:18px;
 }
 
 /* Page adjustments and typography */
@@ -1040,6 +1106,12 @@ p + h2, p + h3 {
 	position:relative;
 	margin-bottom:20px;
 }
+@media only screen and (min-height:600px){
+	.archive .flex-content .priority, .search-results .priority, .home .frontpage-posts .priority {
+		min-height:300px;
+	}
+}
+
 .archive .flex-content .overlay, .search-results .overlay, .home .frontpage-posts .overlay {
 	position:absolute;
 	bottom:0;
@@ -1450,7 +1522,9 @@ p + h2, p + h3 {
 
 /* Frontpage elements */
 .frontpage-menu {
-	margin-bottom:40px;
+	margin-top:60px;
+	margin-bottom:80px;
+	display:flex;
 }
 .frontpage-menu, .frontpage-menu li {
 	padding-left:0;
@@ -1460,17 +1534,21 @@ p + h2, p + h3 {
 }
 .frontpage-menu a {
 	display:block;
-	padding:0 20px;
+	padding:0 20px 0 0;
 	text-decoration:none;
 }
-.frontpage-menu li {
-	display:inline-block;
-}
 
-.frontpage-menu i, .single .entry-meta i, .archive .overlay i, .frontpage-posts a.overlayLink i, .search a.overlayLink i {
+.frontpage-menu svg *, .single .entry-meta svg *, .archive .overlay svg *, .frontpage-posts a.overlayLink svg *, .search a.overlayLink svg * {
+	stroke:currentColor;
+	fill:currentColor;
+}
+.frontpage-menu svg, .single .entry-meta svg, .archive .overlay svg, .frontpage-posts a.overlayLink svg, .search a.overlayLink svg {
+	display:inline-block;
+	width:15px;
+	height:15px;
 	transition:all .2s;
 }
-.frontpage-menu a:hover i, .single a:hover i, .archive .overlay a.overlayLink:hover i, .frontpage-posts a.overlayLink:hover i, .search a.overlayLink:hover i {
+.frontpage-menu a:hover svg, .single a:hover svg, .archive .overlay a.overlayLink:hover svg, .frontpage-posts a.overlayLink:hover svg, .search a.overlayLink:hover svg {
 	transform:rotate(-90deg);
 }
 .single a, .archive .overlay a.overlayLink, .frontpage-posts a.overlayLink, .search a.overlayLink i {
@@ -1787,6 +1865,12 @@ html { scroll-behavior: smooth; }
 	}
 }
 
+@media only screen and (max-width:740px){
+	.site-description {
+			display:none;
+	}
+}
+
 @media only screen and (min-width:600px){
     .home .frontpage-posts .priority article, .archive .flex-content .priority article, .search-results .priority article {
         background-image:none !important;
@@ -1804,9 +1888,6 @@ html { scroll-behavior: smooth; }
         width:100%;
     }
 
-    .site-description {
-        display:none;
-    }
     .home.page .post-230 .entry-title, .page .entry-title {
         font-size:24px;
     }
@@ -1906,4 +1987,8 @@ html { scroll-behavior: smooth; }
 
 .single-demo .post-thumbnail, .single-opensource .post-thumbnail {
 	display:none;
+}
+
+.priority .type-page .entry-title {
+	font-size:1.5em;
 }
