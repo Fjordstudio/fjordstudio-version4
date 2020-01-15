@@ -1992,3 +1992,44 @@ html { scroll-behavior: smooth; }
 .priority .type-page .entry-title {
 	font-size:1.5em;
 }
+
+
+@media only screen and (max-width:560px){
+	.custom-logo-link img {
+		max-width:none;
+		width:50px;
+	}
+	.header-search {
+		display:none;
+	}
+	.header-search.shown {
+		display:block;
+		width:100%;
+		position:absolute;
+		top:100%;
+		left:0;right:0;
+		margin:-20px auto 0 auto;
+		text-align:center;
+		background:#C5CFD5;
+		padding:0 20px;
+	}
+
+	.header-search form > label {
+		display:block;
+	}
+
+	.header-search input {
+		display:block;
+		width:90%;
+	}
+	.header-search input:focus {
+		background:none;
+	}
+	.header-search svg {
+		position:absolute;
+		right:20px;
+		top:10px;
+	}
+
+	.search-button.invisible {display:block;}
+}
