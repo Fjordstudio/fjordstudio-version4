@@ -85,7 +85,7 @@
               'field' => 'slug'
           )
       ),
-       'posts_per_page' => 8,
+       'posts_per_page' => 5,
        ‘orderby’ => ‘published’,
        ‘order’ => ‘ASC’,
       );
