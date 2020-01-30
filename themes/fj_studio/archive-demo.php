@@ -26,7 +26,7 @@ get_header();
 				?>
 			</header><!-- .page-header -->
       <p>
-        Dette er siden for mine for-sjov projekter, animations-demoer og eksperimenter. Ting, der egentlig ikke behøvede at føre til noget, men som var lærerige, sjove og lave - og i nogle tilfælde faktisk førte til et produkt, der er værd at dele.
+        Dette er siden for mine for-sjov projekter, animations-demoer og eksperimenter med ny teknologi. Ting, der egentlig ikke behøvede at føre til noget, men som var lærerige og sjove at lave - og i nogle tilfælde alligevel også førte til et produkt, der er værd at dele.
       </p>
       <p>Her på siden kan I se mine personlige favoritter. For mere, se også <a href="https://codepen.io/Katrine-Marie">min CodePen profil</a>.</p>
       <div class="flex-content">
