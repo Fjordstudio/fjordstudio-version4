@@ -1152,6 +1152,21 @@ p + h2, p + h3 {
 		object-position:center;
 	}
 }
+@media only screen and (max-width:768px){
+	.archive .flex-content .post-thumbnail img, .search-results .flex-content .post-thumbnail img {
+		width:100%;
+		height:auto;
+	}
+
+	.archive .flex-content .overlay, .search-results .overlay, .home .frontpage-posts .overlay {
+		position:static;
+		width:100%;
+		background:#fff;
+		background:none;
+	}
+
+	.archive .overlay a.overlayLink, .frontpage-posts a.overlayLink, .search a.overlayLink i {display:none !important;}
+}
 
 .archive .flex-content .category-grafisk-design .post-thumbnail img, .search-results .flex-content .category-grafisk-design .post-thumbnail img, .home .frontpage-posts .post-thumbnail img {
 	/* width:50%; */
@@ -1702,7 +1717,7 @@ p + h2, p + h3 {
 
 	.archive .flex-content .priority, .search-results .priority {
 		width:100%;
-		margin-bottom:80px;
+		margin-bottom:40px;
 	}
 
 	.archive .flex-content .category-grafisk-design .post-thumbnail img, .search-results .flex-content .category-grafisk-design .post-thumbnail img {
@@ -1721,6 +1736,24 @@ p + h2, p + h3 {
 
 	.single .overlay p {font-size:16px;}
 
+	.flex-content .entry-content {margin-bottom:10px;}
+	.flex-content .entry-content p {text-indent:0;}
+
+	.archive .flex-content .overlay, .search-results .overlay, .home .frontpage-posts .overlay {width:100%;}
+	.archive .flex-content .post-thumbnail img, .search-results .flex-content .post-thumbnail img, .home .frontpage-posts .post-thumbnail img {
+		width:100%;
+	}
+	.archive .flex-content .post-thumbnail, .search-results .flex-content .post-thumbnail, .home .frontpage-posts .post-thumbnail {
+		display:block;
+	}
+	.archive .flex-content .overlay, .search-results .overlay, .home .frontpage-posts .overlay {
+		padding:0;
+	}
+	p + .flex-content {margin-top:40px;}
+	.frontpage-posts .entry-content {margin-bottom:10px;}
+
+	.search-results .flex-content .priority {margin-top:40px;}
+	.search-results .frontpage-cta {margin-top:26px;}
 }
 @media only screen and (max-width:660px){
 	.one-third-box {
@@ -1976,7 +2009,8 @@ html { scroll-behavior: smooth; }
 @media only screen and (max-width:768px){
 	.sy-slide > a > img {
 		width: 100% !important;
-		height: auto !important;
+		/* height: auto !important; */
+		object-position:center center;
 	}
 }
 
